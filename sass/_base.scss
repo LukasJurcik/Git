@@ -1,0 +1,59 @@
+:root {
+    --color-primary: #F3E715;
+    --color-secondary: #C5436F;
+    --color-dark: #252525;
+    --color-green: #1DB954;
+    --headline-color: #E77015;
+}
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 50em;     // 800px
+$bp-smallest: 34.5em; // 600px
+
+@font-face {
+    font-family: valencia;
+    src: url("../fonts/Valencia.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: mosk300;
+    src: url("../fonts/Mosk Light 300.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: mosk500;
+    src: url("../fonts/Mosk Medium 500.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: mosk900;
+    src: url("../fonts/Mosk Ultra-Bold 900.ttf") format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family:  'mosk300', 'Varela Round', sans-serif;;
+    font-weight: 100;
+}

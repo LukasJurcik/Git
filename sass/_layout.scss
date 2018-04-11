@@ -1,0 +1,45 @@
+.header {
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle,#59626A, #031C32);
+}
+#particles-js{
+    height: 100vh;
+}
+.about {
+    min-height: 50vh;
+}
+
+.releases {
+    min-height: 50vh;
+    background-color: #252525;
+}
+
+.book {
+    min-height: 100vh;
+    background:linear-gradient(to bottom right,rgba(253, 126, 126, 0.5), rgba(126, 143, 253, 0.5)) ,url(../img/bck.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.contact-container {
+    margin: 0 auto;
+    max-width: 100rem;
+    height: 60rem;
+    background-color: transparent;
+    display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        align-items: center;
+        min-height: 120vh;
+        padding: 2rem 1rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 0;
+        min-height: 165vh;
+    }
+}

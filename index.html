@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Varela+Round|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/mediaelementplayer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <title>Profitten</title>
+
+</head>
+
+<body>
+    <header id="box0" class="header">
+        <nav class="navigation">
+            <a href="#">
+                <img src="img/logo.png" alt="Logo" class="navigation__logo">
+            </a>
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#box0">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#box1">Profitten</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#box2">Releases</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#box3">Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="responsive-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <span class="responsive-nav__menu">&#9776;</span>
+        </div>
+        <div class="container" id="particles-js">
+            <div class="container__circle">
+
+            </div>
+            <h1 class="container__h1">Profitten</h1>
+            <div class="container__img">
+                <img src="img/jakob.png" alt="Profitten" class="container__jakob">
+            </div>
+        </div>
+    </header>
+    <section id="box1" class="about">
+        <div class="profit">
+            <div class="profit__text">
+                <h2 class="profit__headline">
+                    Profitten
+                </h2>
+                <p class="profit__paragraph">
+                    Who am I you may ask, I am self proclaimed master of all the Bitcoin, Ethereum and Litecoin.
+                    I love to travel the world with my hard earned crypto money and enjoy life, lately I been roaming through
+                    South East Asia inparticulur Thailand. I love local food and people out here, one day I hope to visit every single country in the world.
+                    When you are part of the crypto gang like myself you have that kind of option. Oh yea I almost forgot I also casually rap.
+                </p>
+            </div>
+            <div class="player proft__video">
+                <video class="player__video viewer" src="img/jakobvid.mp4"></video>
+
+                <div class="player__controls">
+                    <div class="progress">
+                        <div class="progress__filled"></div>
+                    </div>
+                    <button class="player__button toggle" title="Toggle Play">►</button>
+                    <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+                    <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+                    
+                    <button data-skip="-10" class="player__button">« 10s</button>
+                    <button data-skip="25" class="player__button">25s »</button>
+                    <a  class="player__icon" href="https://www.youtube.com/watch?v=sZxg-ziq0V4" target="_blank">
+                        <svg class="player__icon">
+                            <use xlink:href="img/sprite.svg#youtube-symbol"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section id="box2" class="releases">
+        <div class="song">
+            <div class="song__img-container">
+                <img src="img/jakob-cover.png" alt="Jakob Album Cover" class="song__img">
+                <img src="img/disc.png" alt="disc" class="song__img--2">
+            </div>
+            <div class="song__text">
+                <h2 class="song__headline">Kryptomønt</h2>
+                <p class="song__paragraph">This isn't just any song, it's the crypto song, the cream de la cream of all crypto songs.
+                    One may even call it crypto anthem to awake the crypto maniac that you are deep inside. </p>
+                <button class="btn-spotify">
+                    <a class="btn" target="_blank" href="https://open.spotify.com/artist/5YKV6oaNmzZCSNrv3lodUj#_=_">
+                        <svg class="spotify">
+                            <use xlink:href="img/sprite.svg#spotify"></use>
+                        </svg>
+                        <span>Spotify</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="box3" class="book">
+        <div class="contact-container">
+            <div class="booking">
+                <h1 class="booking__h1">Booking</h1>
+                <form action="https://formspree.io/lukas.jurcik1998@gmail.com" method="POST" class="booking__form">
+                    <input class="booking__input" type="text" name="Full Name" placeholder="Full Name" required>
+                    <input class="booking__input" type="email" name="Email" placeholder="E-mail" required>
+                    <input class="booking__input" type="tel" name="tel" placeholder="Phone No." required>
+                    <input class="booking__input" type="text" name="Date" placeholder="Event Date" required>
+                    <select class="booking__input booking__input--state" name="State" required>
+                        <option value="australia">State</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="usa">Denmark</option>
+                    </select>
+                    <input class="booking__input" type="text" name="Zip Code" placeholder="Zip Code" required>
+                    <textarea class="booking__message" name="Message" placeholder="Message"></textarea>
+
+                    <input class="booking__btn" type="submit" value="Send">
+                </form>
+            </div>
+            <div class="contact">
+                <h1 class="contact__h1">Contact Info</h1>
+                <div class="info">
+                    <div class="info__contact">
+                        <div class="info__box">
+                            <svg class="info__icon">
+                                <use xlink:href="img/sprite.svg#smartphone-call"></use>
+                            </svg>
+                            <h3 class="info__text">+45 50 18 26 69</h3>
+                        </div>
+                        <div class="info__box">
+                            <svg class="info__icon">
+                                <use xlink:href="img/sprite.svg#envelope"></use>
+                            </svg>
+                            <h3 class="info__text">contact@profitten.com</h3>
+                        </div>
+                    </div>
+                    <div class="info__social">
+                        <a href="#">
+                            <svg class="info__icon-social info__icon-social--sound">
+                                <use xlink:href="img/sprite.svg#soundcloud-logo"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="info__icon-social info__icon-social--youtube">
+                                <use xlink:href="img/sprite.svg#youtube-symbol"></use>
+                            </svg>
+                        </a>
+                        <a href="https://open.spotify.com/artist/5YKV6oaNmzZCSNrv3lodUj#_=_" target="_blank">
+                            <svg class="info__icon-social info__icon-social--spotify">
+                                <use xlink:href="img/sprite.svg#spotify"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg class="info__icon-social info__icon-social--facebook">
+                                <use xlink:href="img/sprite.svg#facebook-logo-button"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ninjos.io/" target="_blank">
+                            <svg class="info__icon-social info__icon-social--instagram">
+                                <use xlink:href="img/sprite.svg#instagram-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        /* Get Our Elements */
+    const player = document.querySelector('.player');
+    const video = player.querySelector('.viewer');
+    const progress = player.querySelector('.progress');
+    const progressBar = player.querySelector('.progress__filled');
+    const toggle = player.querySelector('.toggle');
+    const skipButtons = player.querySelectorAll('[data-skip]');
+    const ranges = player.querySelectorAll('.player__slider');
+
+    /* Build out functions */
+    function togglePlay() {
+    const method = video.paused ? 'play' : 'pause';
+    video[method]();
+    }
+
+    function updateButton() {
+    const icon = this.paused ? '►' : '❚ ❚';
+    console.log(icon);
+    toggle.textContent = icon;
+    }
+
+    function skip() {
+    video.currentTime += parseFloat(this.dataset.skip);
+    }
+
+    function handleRangeUpdate() {
+    video[this.name] = this.value;
+    }
+
+    function handleProgress() {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.flexBasis = `${percent}%`;
+    }
+
+    function scrub(e) {
+    const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+    video.currentTime = scrubTime;
+    }
+
+    /* Hook up the event listeners */
+    video.addEventListener('click', togglePlay);
+    video.addEventListener('play', updateButton);
+    video.addEventListener('pause', updateButton);
+    video.addEventListener('timeupdate', handleProgress);
+
+    toggle.addEventListener('click', togglePlay);
+    skipButtons.forEach(button => button.addEventListener('click', skip));
+    ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+    ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
+
+    let mousedown = false;
+    progress.addEventListener('click', scrub);
+    progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+    progress.addEventListener('mousedown', () => mousedown = true);
+    progress.addEventListener('mouseup', () => mousedown = false);
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script type="text/javascript">
+    /*Particles*/
+        particlesJS.load('particles-js', 'particles.json',
+            function () {
+                console.log('particles.json loaded...')
+            })
+    </script>
+
+    <script type="text/javascript">
+    /*Navigation*/
+        $(document).ready(function () {
+            $(".responsive-nav__menu").click(function () {
+                $(".navigation").slideToggle(500);
+            })
+        })
+    </script>
+  
+
+    <script>
+
+        /*Smooth scroll*/
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+</body>
+
+</html>
